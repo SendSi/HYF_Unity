@@ -20,7 +20,7 @@ internal class FsmInitializePackage : IStateNode
     void IStateNode.OnEnter()
     {
         PatchEventDefine.PatchStatesChange.SendEventMessage("初始化资源包！");
-        GameManager.Instance.StartCoroutine(InitPackage());
+        GameMain.Instance.StartCoroutine(InitPackage());
     }
     void IStateNode.OnUpdate()
     {
@@ -60,25 +60,25 @@ internal class FsmInitializePackage : IStateNode
         // 联机运行模式
         if (playMode == EPlayMode.HostPlayMode)
         {
-            string defaultHostServer = GetHostServerURL();
-            string fallbackHostServer = GetHostServerURL();
-            var createParameters = new HostPlayModeParameters();
-            createParameters.DecryptionServices = new FileStreamDecryption();
-            createParameters.BuildinQueryServices = new GameQueryServices();
-            createParameters.RemoteServices = new RemoteServices(defaultHostServer, fallbackHostServer);
-            initializationOperation = package.InitializeAsync(createParameters);
+            // string defaultHostServer = GetHostServerURL();
+            // string fallbackHostServer = GetHostServerURL();
+            // var createParameters = new HostPlayModeParameters();
+            // createParameters.DecryptionServices = new FileStreamDecryption();
+            // createParameters.BuildinQueryServices = new GameQueryServices();
+            // createParameters.RemoteServices = new RemoteServices(defaultHostServer, fallbackHostServer);
+            // initializationOperation = package.InitializeAsync(createParameters);
         }
 
         // WebGL运行模式
         if (playMode == EPlayMode.WebPlayMode)
         {
-            string defaultHostServer = GetHostServerURL();
-            string fallbackHostServer = GetHostServerURL();
-            var createParameters = new WebPlayModeParameters();
-            createParameters.DecryptionServices = new FileStreamDecryption();
-            createParameters.BuildinQueryServices = new GameQueryServices();
-            createParameters.RemoteServices = new RemoteServices(defaultHostServer, fallbackHostServer);
-            initializationOperation = package.InitializeAsync(createParameters);
+            // string defaultHostServer = GetHostServerURL();
+            // string fallbackHostServer = GetHostServerURL();
+            // var createParameters = new WebPlayModeParameters();
+            // createParameters.DecryptionServices = new FileStreamDecryption();
+            // createParameters.BuildinQueryServices = new GameQueryServices();
+            // createParameters.RemoteServices = new RemoteServices(defaultHostServer, fallbackHostServer);
+            // initializationOperation = package.InitializeAsync(createParameters);
         }
 
         yield return initializationOperation;
