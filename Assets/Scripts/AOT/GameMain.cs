@@ -38,9 +38,14 @@ public class GameMain : MonoBehaviour
         GameObject.Instantiate(go);
 
         // 开始补丁更新流程
-        PatchOperation operation = new PatchOperation("DefaultPackage", EDefaultBuildPipeline.BuiltinBuildPipeline.ToString(), PlayMode);
-        YooAssets.StartOperation(operation);
-        yield return operation;
+        PatchOperation operation_default = new PatchOperation("DefaultPackage", EDefaultBuildPipeline.BuiltinBuildPipeline.ToString(), PlayMode);
+        YooAssets.StartOperation(operation_default);
+        yield return operation_default;
+
+        //更新热更代码
+        PatchOperation operation_hotFix = new PatchOperation("HotFixPackage", EDefaultBuildPipeline.RawFileBuildPipeline.ToString(), PlayMode);
+        YooAssets.StartOperation(operation_hotFix);
+        yield return operation_hotFix;
 
         //加載 元數據 和熱更新代碼
         yield return LoadHotFixRes();

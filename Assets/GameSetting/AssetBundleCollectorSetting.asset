@@ -113,7 +113,7 @@ MonoBehaviour:
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
-  - PackageName: 'HotFixPackage  '
+  - PackageName: HotFixPackage
     PackageDesc: 
     EnableAddressable: 0
     LocationToLower: 0
