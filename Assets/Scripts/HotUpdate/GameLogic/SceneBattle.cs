@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine;
-using UniFramework.Event;
-using UniFramework.Machine;
 using YooAsset;
 
 internal class SceneBattle : MonoBehaviour

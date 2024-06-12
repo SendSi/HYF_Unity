@@ -47,9 +47,15 @@ public class GameMain : MonoBehaviour
         YooAssets.StartOperation(operation_hotFix);
         yield return operation_hotFix;
 
-        //加載 元數據 和熱更新代碼
+        //加载 元数据 和 热更新代码
         yield return LoadHotFixRes();
         LoadMetadataForAOTAssebly();
+        
+        var uiBinder = _hotUpdateAss.GetType("UIGenBinder");
+        uiBinder.GetMethod("BindAll").Invoke(null, null);
+        
+        var hotFixReflex = _hotUpdateAss.GetType("HotFixReflex");
+        hotFixReflex.GetMethod("Run").Invoke(null, null);
 
         // 设置默认的资源包
         var gamePackage = YooAssets.GetPackage("DefaultPackage");
