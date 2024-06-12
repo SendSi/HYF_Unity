@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="30,30" pivot="0.5,0.5" anchor="true">
+  <controller name="showCtrl" exported="true" pages="3,不显示,0,只是红点,1,红数字" selected="2"/>
+  <displayList>
+    <image id="n2_fvnr" name="img" src="dix6fj" fileName="images/images_new/com_red_dot.png" xy="-6,-6" size="42,42">
+      <gearDisplay controller="showCtrl" pages="0,1"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <text id="n1_dix6" name="title" xy="15,15" pivot="0.5,0.5" anchor="true" size="26,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" vAlign="middle" leading="0" letterSpacing="-2" shadowColor="#000000" shadowOffset="1,1" singleLine="true" text="99">
+      <gearDisplay controller="showCtrl" pages="1"/>
+    </text>
+  </displayList>
+</component>

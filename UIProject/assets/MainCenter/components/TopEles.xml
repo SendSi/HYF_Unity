@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,150" opaque="false">
+  <displayList>
+    <component id="n92_q7da" name="mainPlayerBtn" src="ijk71ygcg9n" fileName="components/playerIconBtn.xml" xy="13,6">
+      <Button icon="ui://4ni413laq60q1ygcfh8"/>
+    </component>
+    <component id="n40_b6o0" name="actPbr" src="j4kdhz9cl4" fileName="components/headPbr.xml" xy="21,93">
+      <ProgressBar value="70" max="100"/>
+    </component>
+    <text id="n37_b6o0" name="powerNum" xy="127,42" size="135,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#0f376c" vAlign="middle" letterSpacing="-1" autoSize="none" singleLine="true" text="3,765,133"/>
+    <text id="n90_ukvb" name="nameLbl" xy="163,16" size="100,24" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" text="我的名字六字">
+      <relation target="n91_ukvb" sidePair="right-right"/>
+    </text>
+    <text id="n91_ukvb" name="lvLbl" xy="126,16" size="39,24" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" text="50级"/>
+    <list id="n93_ijk7" name="funcList" xy="664,44" size="668,104" layout="row" selectionMode="none" scroll="both" colGap="-7" defaultItem="ui://4ni413lagzkh8i" autoItemSize="false" align="right">
+      <relation target="" sidePair="right-right,top-top"/>
+      <item title="功能预告" icon="ui://2r331opvil9y1ygcfjg"/>
+      <item title="活动" icon="ui://2r331opvmcwm1ygcfli"/>
+      <item title="福利" icon="ui://2r331opvil9y1ygcfjk"/>
+    </list>
+    <component id="n94_ijk7" name="currencyListCom" src="ykwwkx" fileName="components/currencyListCom.xml" pkg="2r331opv" xy="561,1">
+      <relation target="" sidePair="right-right,top-top"/>
+    </component>
+    <component id="n95_wru6" name="settingBtn" src="wru61ygcgrs" fileName="_new/Button_icon.xml" pkg="2r331opv" xy="1279,4" size="50,50">
+      <relation target="" sidePair="right-right,top-top"/>
+      <Button icon="ui://2r331opvj3xs9pd"/>
+    </component>
+  </displayList>
+</component>
