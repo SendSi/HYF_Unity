@@ -11,10 +11,11 @@ public class HotFixReflex
     public static void Run()
     {
         Debug.LogWarning("HotFixReflex-->Run");
+        ProxyLoginModule.Instance.OpenLoginMainView();
     }
-    
-    public  static void Destroy()
+
+    public static void Destroy()
     {
-        
+
     }
 }

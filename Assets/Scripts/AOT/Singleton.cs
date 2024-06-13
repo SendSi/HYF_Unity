@@ -1,14 +1,14 @@
 ﻿public class Singleton<T> where T : Singleton<T>, new()
 {
-    private static Singleton<T> _instance;
+    private static T _instance;
 
-    public static Singleton<T> Instance
+    public static T Instance
     {
         get
         {
             if (_instance == null)
             {
-                _instance = new Singleton<T>();
+                _instance = new T();
                 _instance.OnInit();
             }
 

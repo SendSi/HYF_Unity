@@ -1,9 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <linker>
+  <assembly fullname="AOT">
+    <type fullname="GameMain" preserve="all" />
+    <type fullname="Singleton`1" preserve="all" />
+  </assembly>
+  <assembly fullname="FairyGUI">
+    <type fullname="FairyGUI.Controller" preserve="all" />
+    <type fullname="FairyGUI.DestroyMethod" preserve="all" />
+    <type fullname="FairyGUI.GButton" preserve="all" />
+    <type fullname="FairyGUI.GComboBox" preserve="all" />
+    <type fullname="FairyGUI.GComponent" preserve="all" />
+    <type fullname="FairyGUI.GGraph" preserve="all" />
+    <type fullname="FairyGUI.GGroup" preserve="all" />
+    <type fullname="FairyGUI.GImage" preserve="all" />
+    <type fullname="FairyGUI.GLabel" preserve="all" />
+    <type fullname="FairyGUI.GList" preserve="all" />
+    <type fullname="FairyGUI.GLoader" preserve="all" />
+    <type fullname="FairyGUI.GLoader3D" preserve="all" />
+    <type fullname="FairyGUI.GObject" preserve="all" />
+    <type fullname="FairyGUI.GProgressBar" preserve="all" />
+    <type fullname="FairyGUI.GRichTextField" preserve="all" />
+    <type fullname="FairyGUI.GRoot" preserve="all" />
+    <type fullname="FairyGUI.GSlider" preserve="all" />
+    <type fullname="FairyGUI.GTextField" preserve="all" />
+    <type fullname="FairyGUI.GTextInput" preserve="all" />
+    <type fullname="FairyGUI.GTree" preserve="all" />
+    <type fullname="FairyGUI.PackageItem" preserve="all" />
+    <type fullname="FairyGUI.RelationType" preserve="all" />
+    <type fullname="FairyGUI.TimerCallback" preserve="all" />
+    <type fullname="FairyGUI.Timers" preserve="all" />
+    <type fullname="FairyGUI.Transition" preserve="all" />
+    <type fullname="FairyGUI.UIObjectFactory" preserve="all" />
+    <type fullname="FairyGUI.UIPackage" preserve="all" />
+    <type fullname="FairyGUI.UIPackage/LoadResourceAsync" preserve="all" />
+    <type fullname="FairyGUI.Utils.XML" preserve="all" />
+    <type fullname="FairyGUI.Window" preserve="all" />
+  </assembly>
   <assembly fullname="System">
     <type fullname="System.CodeDom.Compiler.GeneratedCodeAttribute" preserve="all" />
     <type fullname="System.ComponentModel.EditorBrowsableAttribute" preserve="all" />
     <type fullname="System.ComponentModel.EditorBrowsableState" preserve="all" />
+  </assembly>
+  <assembly fullname="System.Core">
+    <type fullname="System.Linq.Enumerable" preserve="all" />
   </assembly>
   <assembly fullname="UniFramework.Event">
     <type fullname="UniFramework.Event.EventGroup" preserve="all" />
@@ -20,6 +59,7 @@
   <assembly fullname="UnityEngine.CoreModule">
     <type fullname="UnityEngine.Component" preserve="all" />
     <type fullname="UnityEngine.Coroutine" preserve="all" />
+    <type fullname="UnityEngine.Debug" preserve="all" />
     <type fullname="UnityEngine.Events.UnityAction" preserve="all" />
     <type fullname="UnityEngine.Events.UnityEvent" preserve="all" />
     <type fullname="UnityEngine.GameObject" preserve="all" />
@@ -29,6 +69,7 @@
     <type fullname="UnityEngine.Quaternion" preserve="all" />
     <type fullname="UnityEngine.Random" preserve="all" />
     <type fullname="UnityEngine.SceneManagement.LoadSceneMode" preserve="all" />
+    <type fullname="UnityEngine.TextAsset" preserve="all" />
     <type fullname="UnityEngine.Time" preserve="all" />
     <type fullname="UnityEngine.Transform" preserve="all" />
     <type fullname="UnityEngine.Vector2" preserve="all" />
@@ -54,10 +95,16 @@
     <type fullname="YooAsset.YooAssets" preserve="all" />
   </assembly>
   <assembly fullname="mscorlib">
+    <type fullname="System.Action" preserve="all" />
     <type fullname="System.Action`1" preserve="all" />
+    <type fullname="System.Activator" preserve="all" />
     <type fullname="System.Array" preserve="all" />
     <type fullname="System.Byte" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2/Enumerator" preserve="all" />
+    <type fullname="System.Collections.Generic.IEnumerable`1" preserve="all" />
     <type fullname="System.Collections.Generic.IEnumerator`1" preserve="all" />
+    <type fullname="System.Collections.Generic.KeyValuePair`2" preserve="all" />
     <type fullname="System.Collections.Generic.List`1" preserve="all" />
     <type fullname="System.Collections.Generic.List`1/Enumerator" preserve="all" />
     <type fullname="System.Collections.IEnumerator" preserve="all" />
@@ -69,12 +116,14 @@
     <type fullname="System.Int32" preserve="all" />
     <type fullname="System.NotSupportedException" preserve="all" />
     <type fullname="System.Object" preserve="all" />
+    <type fullname="System.Reflection.MemberInfo" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.CompilationRelaxationsAttribute" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.CompilerGeneratedAttribute" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.IteratorStateMachineAttribute" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.RuntimeHelpers" preserve="all" />
     <type fullname="System.RuntimeFieldHandle" preserve="all" />
+    <type fullname="System.RuntimeTypeHandle" preserve="all" />
     <type fullname="System.String" preserve="all" />
     <type fullname="System.Type" preserve="all" />
     <type fullname="System.ValueType" preserve="all" />

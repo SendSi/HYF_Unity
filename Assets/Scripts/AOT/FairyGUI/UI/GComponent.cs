@@ -1722,5 +1722,14 @@ namespace FairyGUI
         public Action __onConstruct;
         public Action __onDispose;
 #endif
+
+        /// <summary>         自己定义的        使用用OpenUIViewCom时被调用 </summary>
+        public virtual void OnInit()
+        {
+#if UNITY_EDITOR
+            Debug.LogWarning(" 若走不到 此方法   UIGenBinder.cs看看 注册了此模块没 ");
+#endif
+        }
+
     }
 }
