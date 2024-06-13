@@ -9,6 +9,13 @@ namespace Login
         {
             base.OnInit();
             FGUILoader.Instance.CheckLoadCommonPKG(); //加载公共依赖包
+            _roleInputTxt.text = "999";
+            _loginBtn.onClick.Set(OnClickLoginBtn);
+        }
+
+        private void OnClickLoginBtn(EventContext context)
+        {
+            _roleInputTxt.text = "你建水";
         }
 
         public override void Dispose()

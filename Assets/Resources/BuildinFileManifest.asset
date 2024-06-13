@@ -12,4 +12,112 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71b02dfa7aa9d4545b3417a18477fbee, type: 3}
   m_Name: BuildinFileManifest
   m_EditorClassIdentifier: 
-  BuildinFiles: []
+  BuildinFiles:
+  - PackageName: DefaultPackage
+    FileName: 073cacd19e88ef53100677b1200e7a45.bundle
+    FileCRC32: 947d70e3
+  - PackageName: DefaultPackage
+    FileName: 09db79e6b16ce97d05652aa4dc3ac889.bundle
+    FileCRC32: 65bf5207
+  - PackageName: DefaultPackage
+    FileName: 0ceb144d575501845862825fd51aa2ab.bundle
+    FileCRC32: 2d4e7ddc
+  - PackageName: DefaultPackage
+    FileName: 2404afb3f3f3b102d04ae135341ab68d.bundle
+    FileCRC32: 63e69283
+  - PackageName: DefaultPackage
+    FileName: 266a5e5c74fe719c551bab23627d0e4d.bundle
+    FileCRC32: 1d872578
+  - PackageName: DefaultPackage
+    FileName: 28c197636c657ceda34dd834fccea7d6.bundle
+    FileCRC32: bade8080
+  - PackageName: DefaultPackage
+    FileName: 2be155f63c594c5dfa268ed22725faf2.bundle
+    FileCRC32: cc5bdd1a
+  - PackageName: DefaultPackage
+    FileName: 354f38cbf8daf65790dc75c70b091ec9.bundle
+    FileCRC32: 5b91d890
+  - PackageName: DefaultPackage
+    FileName: 3af61d6badfc0de20d432dde34220a21.bundle
+    FileCRC32: 61166317
+  - PackageName: DefaultPackage
+    FileName: 42b67d2b0dbee4b68086e584a88dc6ac.bundle
+    FileCRC32: 926f1684
+  - PackageName: DefaultPackage
+    FileName: 496f0975aac200f28229e2385441069e.bundle
+    FileCRC32: 77cf1cdb
+  - PackageName: DefaultPackage
+    FileName: 49f776b1497af18fbc2180ea57502469.bundle
+    FileCRC32: 7bafb76d
+  - PackageName: DefaultPackage
+    FileName: 7054e3d4aa3d81f5e12cc18715137b33.bundle
+    FileCRC32: 37a7c275
+  - PackageName: DefaultPackage
+    FileName: 764ab244c92a488ba99cadb221d84a85.bundle
+    FileCRC32: 042cb9f8
+  - PackageName: DefaultPackage
+    FileName: 7876ac42a97b6f12329222fdc392fea2.bundle
+    FileCRC32: a13a35e9
+  - PackageName: DefaultPackage
+    FileName: 793d5d2c653a714b3c623388b0d13f27.bundle
+    FileCRC32: df4f2087
+  - PackageName: DefaultPackage
+    FileName: 82239186eb8f3f2aadac953399656d59.bundle
+    FileCRC32: 4a628554
+  - PackageName: DefaultPackage
+    FileName: 8af39f989c6b1fbd9b9e5eb89ceee0af.bundle
+    FileCRC32: 5913e514
+  - PackageName: DefaultPackage
+    FileName: 8d59875ef2f0c973e181ae3ca4635fdc.bundle
+    FileCRC32: 42feb1ed
+  - PackageName: DefaultPackage
+    FileName: adca05caa324cdde27a277c19e9b1376.bundle
+    FileCRC32: c80a5737
+  - PackageName: DefaultPackage
+    FileName: affcf3051efce12139a218974d0dff78.bundle
+    FileCRC32: 887a9274
+  - PackageName: DefaultPackage
+    FileName: b3ea5a55471fe6210b0c509dcaa3075d.bundle
+    FileCRC32: d1dfdfb4
+  - PackageName: DefaultPackage
+    FileName: b4c1ef4114b6c71264073ad8f6658f7e.bundle
+    FileCRC32: 0eebdc43
+  - PackageName: DefaultPackage
+    FileName: c4647bfd8f920a0d2000ed880b2d4ca4.bundle
+    FileCRC32: e6ccbe8b
+  - PackageName: DefaultPackage
+    FileName: d6184952fdfd95e6124cca58eb6808f8.bundle
+    FileCRC32: 29562427
+  - PackageName: DefaultPackage
+    FileName: e7ee4c85dacae8d2d003101971e6bd03.bundle
+    FileCRC32: d14bcdb7
+  - PackageName: DefaultPackage
+    FileName: f0ecdd06e0846e1a01b63d935bf5fe3e.bundle
+    FileCRC32: f3a7a3fd
+  - PackageName: DefaultPackage
+    FileName: f6190935e058df99da0c8a11023e6364.bundle
+    FileCRC32: caa1f624
+  - PackageName: DefaultPackage
+    FileName: fb91ed8406773aff3033923018f77bb0.bundle
+    FileCRC32: 0404a1a8
+  - PackageName: HotFixPackage
+    FileName: 21787118ee78e9ee8516476b2ee97ec4.rawfile
+    FileCRC32: 20f211c3
+  - PackageName: HotFixPackage
+    FileName: 23fa91b9e7bb520a649fd999ffafb81e.rawfile
+    FileCRC32: 2a5630cf
+  - PackageName: HotFixPackage
+    FileName: 305c55ca205c7c43e1ea8c86e0ed7c37.rawfile
+    FileCRC32: e5fb53bf
+  - PackageName: HotFixPackage
+    FileName: 552afe9d202d10a2c241a8a02debc6ec.rawfile
+    FileCRC32: 73251337
+  - PackageName: HotFixPackage
+    FileName: 8327e7647d60a260a001e41c1216efc2.rawfile
+    FileCRC32: 6d1df822
+  - PackageName: HotFixPackage
+    FileName: 87ae15cbe70eda5287671a75ffc0c2c3.rawfile
+    FileCRC32: 9ef067e0
+  - PackageName: HotFixPackage
+    FileName: d8c72211d920bc4bb366a667f38a29a3.rawfile
+    FileCRC32: 74fbe8de

@@ -79,6 +79,7 @@ public class GameMain : MonoBehaviour
     /// <summary>  走热更流程       1两个包的补丁 2元数据与代码 3设置默认包  </summary>
     private IEnumerator LoadGameHotFix()
     {
+        ProxyHotPKGModule.Instance.OpenHFView();
         // 开始补丁更新流程
         var operation_default = new PatchOperation(mYooDefaultPKG, EDefaultBuildPipeline.BuiltinBuildPipeline.ToString(), PlayMode);
         YooAssets.StartOperation(operation_default);
@@ -93,7 +94,7 @@ public class GameMain : MonoBehaviour
         yield return LoadHotFixRes();
         LoadMetadataForAOTAssebly();
 
-        var pkg = YooAssets.CreatePackage(mYooDefaultPKG);
+        var pkg = YooAssets.GetPackage(mYooDefaultPKG);
         YooAssets.SetDefaultPackage(pkg);
     }
 

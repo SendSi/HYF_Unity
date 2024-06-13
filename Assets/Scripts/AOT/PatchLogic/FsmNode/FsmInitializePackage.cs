@@ -60,25 +60,25 @@ internal class FsmInitializePackage : IStateNode
         // 联机运行模式
         if (playMode == EPlayMode.HostPlayMode)
         {
-            // string defaultHostServer = GetHostServerURL();
-            // string fallbackHostServer = GetHostServerURL();
-            // var createParameters = new HostPlayModeParameters();
-            // createParameters.DecryptionServices = new FileStreamDecryption();
-            // createParameters.BuildinQueryServices = new GameQueryServices();
-            // createParameters.RemoteServices = new RemoteServices(defaultHostServer, fallbackHostServer);
-            // initializationOperation = package.InitializeAsync(createParameters);
+            string defaultHostServer = GetHostServerURL();
+            string fallbackHostServer = GetHostServerURL();
+            var createParameters = new HostPlayModeParameters();
+            createParameters.DecryptionServices = new FileStreamDecryption();
+            createParameters.BuildinQueryServices = new GameQueryServices();
+            createParameters.RemoteServices = new RemoteServices(defaultHostServer, fallbackHostServer);
+            initializationOperation = package.InitializeAsync(createParameters);
         }
 
         // WebGL运行模式
         if (playMode == EPlayMode.WebPlayMode)
         {
-            // string defaultHostServer = GetHostServerURL();
-            // string fallbackHostServer = GetHostServerURL();
-            // var createParameters = new WebPlayModeParameters();
-            // createParameters.DecryptionServices = new FileStreamDecryption();
-            // createParameters.BuildinQueryServices = new GameQueryServices();
-            // createParameters.RemoteServices = new RemoteServices(defaultHostServer, fallbackHostServer);
-            // initializationOperation = package.InitializeAsync(createParameters);
+            string defaultHostServer = GetHostServerURL();
+            string fallbackHostServer = GetHostServerURL();
+            var createParameters = new WebPlayModeParameters();
+            createParameters.DecryptionServices = new FileStreamDecryption();
+            createParameters.BuildinQueryServices = new GameQueryServices();
+            createParameters.RemoteServices = new RemoteServices(defaultHostServer, fallbackHostServer);
+            initializationOperation = package.InitializeAsync(createParameters);
         }
 
         yield return initializationOperation;
@@ -103,8 +103,10 @@ internal class FsmInitializePackage : IStateNode
     private string GetHostServerURL()
     {
         //string hostServerIP = "http://10.0.2.2"; //安卓模拟器地址
-        string hostServerIP = "http://127.0.0.1";
-        string appVersion = "v1.0";
+        //string hostServerIP = "http://127.0.0.1";
+        //string appVersion = "v1.0";
+        string hostServerIP = AppConfig.hostServerIp;// "http://127.0.0.1";
+        string appVersion = AppConfig.appVersion;// "v1.0";
 
 #if UNITY_EDITOR
         if (UnityEditor.EditorUserBuildSettings.activeBuildTarget == UnityEditor.BuildTarget.Android)

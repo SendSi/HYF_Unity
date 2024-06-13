@@ -9,5 +9,5 @@
     <image id="kw1g1ygcga2" name="load.jpg" path="/image/" exported="true"/>
     <image id="zo6m1ygcgrs" name="dialog.png" path="/image/" exported="true" scale="9grid" scale9grid="21,21,5,9"/>
   </resources>
-  <publish name="" path="../Assets/Resources" packageCount="2" genCode="true" codePath="../Assets/GameScript/AOT/UIGen"/>
+  <publish name="" path="../Assets/Resources" packageCount="2" genCode="true" codePath="../Assets/Scripts/AOT/UIGen"/>
 </packageDescription>
